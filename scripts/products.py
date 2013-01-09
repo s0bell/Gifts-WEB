@@ -8,7 +8,7 @@ import pytest
 
 
 class TestMain(SaunterTestCase):
-    @pytest.marks('neat')
+    @pytest.marks('shallow')
     def test_filters(self):
         p = Products(self.driver)
         p.open_default_url()
