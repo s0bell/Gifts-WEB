@@ -1,6 +1,6 @@
 from saunter.testcase.webdriver import SaunterTestCase
 
-from pages.Shops import Shops
+from pages.shops import Shops
 from pages.header import Header
 from pages.footer import Footer
 
