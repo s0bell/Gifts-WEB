@@ -9,16 +9,24 @@ import pytest
 
 class TestMain(SaunterTestCase):
     @pytest.marks('shallow')
-    def test_something(self):
+    def test_shop_hyperlinks(self):
         s = Shops(self.driver)
-        s.open_default_url()
 
-        # Test links on first 10 collection names
-        for i in range(1, 10):
-            name = s.get_collection_name(i)
-            s.open_collection_by_name(i)
-            assert(s.current_collection_name == name)
+        # Test title hyperlinks on first three shops
+        for i in range(1, 3):
             s.open_default_url()
+            shop = s.get_shop(i)
+            title = s.get_shop_title(shop)
+            s.open_shop_by_title(shop)
+            assert(s.get_shop_title_from_current_page() == title)
+
+        # Test thumbnail hyperlinks on first three shops
+        for i in range(1, 3):
+            s.open_default_url()
+            shop = s.get_shop(i)
+            title = s.get_shop_title(shop)
+            s.open_shop_by_thumbnail(shop)
+            assert(s.get_shop_title_from_current_page() == title)
 
 
 class TestHeader(SaunterTestCase):

@@ -8,12 +8,12 @@ import pytest
 
 
 class TestMain(SaunterTestCase):
-    @pytest.marks('shallow')
+    @pytest.marks('neat')
     def test_filters(self):
         p = Products(self.driver)
         p.open_default_url()
 
-        # Test Product Filter visibility when scrolling
+        # Test product Filter visibility when scrolling
         p.scroll_to_end_of_page()
         assert(p.is_product_filter_visible())
 

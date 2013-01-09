@@ -10,7 +10,7 @@ import string
 
 
 class TestMain(SaunterTestCase):
-    @pytest.marks('shallow')
+    @pytest.marks('legacy')
     def test_images_present(self):
         h = HomePage(self.driver)
         h.open_default_url()
@@ -18,7 +18,7 @@ class TestMain(SaunterTestCase):
         assert(h.is_element_available(h.locators['list textbox']))
         assert(h.is_element_available(h.locators['list btn']))
 
-    @pytest.marks('shallow')
+    @pytest.marks('legacy')
     def test_slide_nav(self):
         h = HomePage(self.driver)
         h.open_default_url()
@@ -32,7 +32,7 @@ class TestMain(SaunterTestCase):
         h.go_to_prev_slide()
         assert(h.is_slide_visible('slide 1'))
 
-    @pytest.marks('shallow')
+    @pytest.marks('legacy')
     def test_list_creation(self):
         name = ''.join(random.choice(
             string.ascii_lowercase + string.digits) for x in range(15))
@@ -44,7 +44,7 @@ class TestMain(SaunterTestCase):
 
 
 class TestHeader(SaunterTestCase):
-    @pytest.marks('shallow')
+    @pytest.marks('legacy')
     def test_elements_present(self):
         HomePage(self.driver).open_default_url()
         h = Header(self.driver)
@@ -53,7 +53,7 @@ class TestHeader(SaunterTestCase):
 
 
 class TestFooter(SaunterTestCase):
-    @pytest.marks('shallow')
+    @pytest.marks('legacy')
     def test_elements_present(self):
         HomePage(self.driver).open_default_url()
         f = Footer(self.driver)
