@@ -18,11 +18,11 @@ locators = {
     'Privacy policy': 'link=Privacy policy',
     'Terms of Use': 'link=Terms of Use',
     'Facebook fan page': 'link=Facebook fan page',
-    'Twitter fan page': 'link=Twitter fan page',
-    'Trending now': 'css=div.footerLinkCategoryContent ' \
-        'a:nth-child(1) span.tmaSubline',
-    'Toyland': 'css=div.footerLinkCategoryContent ' \
-        'a:nth-child(2) span.tmaSubline'
+    'Twitter fan page': 'link=Twitter fan page'
+    #'Trending now': 'css=div.footerLinkCategoryContent ' \
+    #    'a:nth-child(1) span.tmaSubline',
+    #'Toyland': 'css=div.footerLinkCategoryContent ' \
+    #    'a:nth-child(2) span.tmaSubline'
 }
 
 

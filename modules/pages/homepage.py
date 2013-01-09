@@ -9,14 +9,17 @@ from saunter.po import string_timeout, timeout_seconds
 from saunter.exceptions import ElementVisiblityTimeout
 import time
 from saunter.ConfigWrapper import ConfigWrapper as cfg_wrapper
-locators = {'list textbox': 'css=input.nameYourList',
- 'list btn': 'css=form.createNewListContent input.button:nth-child(3)',
- 'specials btn': 'css=img.homeAdvert',
- 'prev slide': 'id=headlineArrowLeft',
- 'next slide': 'id=headlineArrowRight',
- 'slide 1': 'id=headlineSlide1',
- 'slide 2': 'id=headlineSlide2',
- 'slide 3': 'id=headlineSlide3'}
+
+locators = {
+    'list textbox': 'css=input.nameYourList',
+     'list btn': 'css=form.createNewListContent input.button:nth-child(3)',
+     'specials btn': 'css=img.homeAdvert',
+     'prev slide': 'id=headlineArrowLeft',
+     'next slide': 'id=headlineArrowRight',
+     'slide 1': 'id=headlineSlide1',
+     'slide 2': 'id=headlineSlide2',
+     'slide 3': 'id=headlineSlide3'
+}
 
 
 class HomePage(Page):

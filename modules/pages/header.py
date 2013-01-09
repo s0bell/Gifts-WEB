@@ -12,11 +12,12 @@ locators = {
     'Main logo': 'css=#bannerCenterLogo.navLink img',
     'My cart': 'id=myCartIcon',
     'Login': 'id=loginIcon',
-    'Find gifts': 'id=findGiftsButton',
+    'Browse Shops': 'link=Browse Shops',
+    'Discover': 'link=Discover',
     'Gift lists': 'link=Gift lists',
-    'Search box': 'id=friendsAndInterestsSearch',
-    'Trending now': 'css=#mainNav.group div.holidayNav a:nth-child(1)',
-    'Toyland': 'css=#mainNav.group div.holidayNav a:nth-child(2)'
+    'Search box': 'id=friendsAndInterestsSearch'
+    #'Trending now': 'css=#mainNav.group div.holidayNav a:nth-child(1)',
+    #'Toyland': 'css=#mainNav.group div.holidayNav a:nth-child(2)'
 }
 
 
